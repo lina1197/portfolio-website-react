@@ -3,7 +3,6 @@
     color: #fff;
 }
 
-
 .light {
     background-color: #fff;
     color: #333;
@@ -13,4 +12,43 @@
     right: 0px;
     position: absolute;
     top: 0px;
+}
+
+.HomeIMG img{
+    width:30%;
+    position:relative;
+    display:flex;
+    margin:auto;
+
+}
+
+.Intro {
+    text-align: center;
+}
+
+.SocialMedia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.white-icon {
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin: 10px 5px;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+.white-icon:hover {
+    transform: scale(1.1);
+}
+.white-icon svg {
+    height: 100%;
+    width: 100%;
 }
