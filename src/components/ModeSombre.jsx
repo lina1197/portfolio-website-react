@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import "../../src/styles/home.css";
+import "../../src/styles/style.css";
 
-function DarkMode() {
+function ModeSombre() {
   const [theme, setTheme] = useState('light');
 
   const toggleTheme = () => {
@@ -28,5 +28,5 @@ function DarkMode() {
   );
 }
 
-export default DarkMode;
+export default ModeSombre;
 
