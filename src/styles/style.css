@@ -8,3 +8,9 @@
     background-color: #fff;
     color: #333;
 }
+
+.ModeSombre {
+    right: 0px;
+    position: absolute;
+    top: 0px;
+}

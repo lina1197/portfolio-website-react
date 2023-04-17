@@ -17,7 +17,7 @@ function ModeSombre() {
   }, [theme]);
 
   return (
-    <div  className={`DarkMode ${theme}`}>
+    <div  className={`ModeSombre ${theme}`}>
       <a onClick={toggleTheme} href="#">
         {theme === 'light' ? 
           <i className="fa fa-moon-o" aria-hidden="true"></i> :
