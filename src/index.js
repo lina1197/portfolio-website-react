@@ -7,7 +7,18 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+    <Routes>
+      <Route path="/" element={<Home/>} />
+     
+            
+            <Route path='*' element={<NotFound />}/>
+
+
+
+
+       </Routes>
+  </Router>
   </React.StrictMode>
 );
 
