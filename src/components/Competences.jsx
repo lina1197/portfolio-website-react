@@ -5,10 +5,8 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 const Competences = () => {
   return (
-    <div id="Competences" className="skills-section">
-      <div className="skills-header">
-        <h1>Skills</h1>
-      </div>
+    <div id="Competences" className="Competences"><div  className="skills-section">
+        <h1 className="Header">Skills</h1>
       <div className="skills-container">
         <div className="skills-box">
           <div className="skills-title">
@@ -77,7 +75,8 @@ const Competences = () => {
           </div>
         </div>
       </div>
-    </div>
+    </div></div>
+    
   );
 };
 

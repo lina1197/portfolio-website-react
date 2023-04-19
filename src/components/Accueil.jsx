@@ -8,6 +8,7 @@ import ModeSombre from "./ModeSombre";
 import Projets from "./Projets";
 import Contact from "./Contact";
 import Competences from './Competences';
+import Apropos from './Apropos';
 function Accueil() {
   return (
 <div><Navigation 
@@ -22,6 +23,7 @@ function Accueil() {
 <i class="fab fa-youtube  white-icon"></i>
 
           </div> 
+          <Apropos/>
           <Projets/>
           <Competences/>
           <Contact/>

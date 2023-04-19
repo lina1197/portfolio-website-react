@@ -15,8 +15,10 @@ const Contact = () => {
     console.log(conFom)
   }
   return (
-    <div id="Contact" className="container mt-5">
-      
+    <div id="Contact" className='Contact'>              
+
+        <div  className="container mt-5">
+<h1 className="Header">CONTACT ME</h1>
       <form onSubmit={onSubmit}>
         <div className="form-group">
           <input className="form-control" type="text" id="name" required />
@@ -30,11 +32,12 @@ const Contact = () => {
           <textarea className="form-control" id="message" required />
           <span className="floating-label">Message</span>
         </div>
-        <button className="btn btn-danger" type="submit">
+        <button className="btn btn-success" type="submit">
           {formStatus}
         </button>
       </form>
-    </div>
+    </div></div>
+    
   )
 }
 export default Contact;
