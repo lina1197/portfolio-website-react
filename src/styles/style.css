@@ -1,11 +1,11 @@
 .dark {
-    background-color: #333;
+    background-color: #0A192F;
     color: #fff;
 }
 
 .light {
     background-color: #fff;
-    color: #333;
+    color: #000;
 }
 
 .ModeSombre {
@@ -28,27 +28,349 @@
 
 .SocialMedia {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    
+    flex-direction: column;
+    position: fixed;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 9999;
+
 }
+
+
 .white-icon {
-    background-color: #fff;
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     padding: 10px;
     margin: 10px 5px;
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
+    transition: all 0.3s ease;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 0.3s ease;
 }
+.white-icon::before{display: flex;
+justify-content: center;}
 .white-icon:hover {
     transform: scale(1.1);
 }
+
 .white-icon svg {
     height: 100%;
     width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dark a {
+color:white;
+}
+.dark a:hover {
+    color:rgb(100, 255, 218);
+}
+.light a {
+    color:black;
+}
+.light a:hover{color: darkblue}
+/* Projets section css */
+
+
+.section {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+    height: 300px;
+    padding: 5px;
+    margin: 10px;
+    position: relative;
+    border-radius: 7px;
+    perspective: 2000px;
+}
+
+.card:hover .card-front {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-back {
+    transform: rotateY(360deg);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+.card {
+    border:none;
+    background-color: inherit;
+}
+
+.card-front,
+.card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 7px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: 0.5s;
+}
+
+.light .card-front {
+    background-color: #0A192F;
+    color: rgb(100, 255, 218);
+}
+
+.light .card-back {
+    background-color: #0A192F;
+    color: rgb(100, 255, 218);
+    transform: rotateY(180deg);
+}
+
+.dark .card-front {
+    background-color: white;
+    color: black;
+}
+
+.dark .card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+/* contact */
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.form-control {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    border-radius: 0;
+    box-shadow: none;
+    padding: .5rem 0;
+    font-size: 1rem;
+    height: auto;
+    width: 100%;
+}
+
+.form-control:focus {
+    border-color: #8a93a6;
+    box-shadow: none;
+}
+
+.form-control:focus+.floating-label,
+.form-control:not(:placeholder-shown)+.floating-label {
+    font-size: .8rem;
+    color: #8a93a6;
+    transform: translateY(-1.5rem);
+    transition: all .2s ease-in-out;
+}
+
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    font-size: 1rem;
+    transition: all .2s ease-in-out;
+    color: #a0aec0;
+}
+/* section competences */
+.skills-section{
+padding-top: 20px;
+}
+
+.skills-header{
+text-align: center;
+color: inherit;
+padding: 1rem;
+position: relative;
+}
+
+.skills-header:after{
+content: '';
+position: absolute;
+bottom: 0;
+left: 50%;
+transform: translateX(-50%);
+width: 100px;
+height: 4px;
+background-color: #2ecc71;
+border-radius: 2px;
+}
+
+.skills-container{
+display: grid;
+grid-tempLate-columns: repeat(5, 1fr);
+justify-content:center;
+align-items:center;
+text-align: center;
+grid-gap:1rem;
+padding: 1rem 80px;
+font-size: 1.2rem;
+}
+.skills-box{
+padding: 1rem;
+color: #000;
+cursor:pointer;
+}
+.skills-box:hover > .skills-title: after, 
+.skills-box:hover > .skills-title: before{
+width: 30px;
+}
+.skills-box:hover .skills-img{
+transform: translateX(-20px);
+}
+
+.skills-title{
+display:flex;
+flex-direction: column;
+align-items:center;
+padding: 0.5rem;
+margin-bottom: 0.5rem;
+position: relative;
+}
+
+.skills-title:after{
+content: '';
+position:absolute;
+bottom: 0;
+right: 50%;
+width:20px;
+height:4px;
+border-radius: 2px 0 0 2px;
+background-color: #2ecc71;
+transition: .5s;
+}
+
+.skills-title:before{
+content: '';
+position:absolute;
+bottom: 0;
+left: 50%;
+width:100px;
+height:4px;
+border-radius: 0 2px 2px 0;
+background-color: #2ecc71;
+}
+
+.skills-icons{
+
+z-index:2;
+}
+
+.skills-img{
+width:90px;
+height:90px;
+position: relative;
+border-radius: 45px;
+background-color: #fff;
+display:flex;
+justify-content:center;
+align-items:center;
+transition: .5s;
+}
+
+.skills-img:after{
+content: '';
+position:absolute;
+top:0;
+left: 0;
+width:50%;
+height:90px;
+background: rgba(100, 100, 100, 0.5);
+border-radius: 45px 0 0 45px;
+}
+.skills-title h3{
+color: inherit;
+margin-top: 0.5rem;
+}
+@media screen and (max-width:990px){
+ .skills-container{
+ grid-tempLate-columns: repeat(2, 1fr);
+ padding: 2rem 50px;
+ }
+}
+
+@media screen and (max-width:650px){
+ .skills-container{
+ grid-tempLate-columns:2fr;
+ padding: 2rem 50px;
+ }
+}
+
+.html5 {
+    color:#f06529;
+    font-size:60px;
+}
+.css3{
+    color: #2965f1;
+        font-size: 60px;
+}
+.js {
+    color:#f0db4f;
+    font-size: 60px;
+}
+.node-js {
+    color:#3c873a;
+        font-size: 60px;
+}
+.react {
+    color:#61dbfb;
+            font-size: 60px;
+}
+.mongodb {
+    color:#589636;
+                font-size: 60px;
+}
+.bootstrap {
+    color:#563d7c;
+                    font-size: 60px;
+}
+
+.ListTech {
+    display:flex;
+    list-style:none;
+    flex-wrap: wrap;
+}
+.ListTech li {
+    margin-right:5px;
+    position: relative;
+}
+
+.ListTech li:not(:last-child)::after {
+    content: ',';
+    position: absolute;
+    right: -8px;
+    padding-left: 5px;
+        padding-right: 5px;
+}
+
+.ListTech li:last-child::after {
+    content: '';
+  
+}
+.LinkProjet {
+    text-decoration: none;
+}
+
+.light .LinkProjet {
+    color:white;
+}
+.dark .LinkProjet {
+    color:black;
 }

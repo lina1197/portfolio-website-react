@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../../src/styles/style.css";
-import { NavLink } from "react-router-dom";
+import { HashLink as NavLink } from "react-router-hash-link";
 
 
 const Navigation = () => {
@@ -83,15 +83,15 @@ const Navigation = () => {
                   accueil  
                 </NavLink></li>
         
-        <li className="nav-item" > <NavLink className="nav-link" to="/APropos">
+        <li className="nav-item" > <NavLink className="nav-link" to="#APropos">
                à propos </NavLink></li>
-               <li className="nav-item" > <NavLink className="nav-link" to="/Projets">
+               <li className="nav-item" > <NavLink className="nav-link" to="#Projets">
                projets </NavLink></li>
                   
-                  <li className="nav-item" > <NavLink className="nav-link" to="/Competences">
+                  <li className="nav-item" > <NavLink className="nav-link" to="#Competences">
                compétences </NavLink></li>
        
-       <li className="nav-item" > <NavLink className="nav-link" to="/Contact">
+       <li className="nav-item" > <NavLink className="nav-link" to="#Contact">
                contact </NavLink></li>
        
       </ul></div>
