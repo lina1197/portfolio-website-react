@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 function Projets() {
   return (
 
-    <div id="Projets">
+    <div class="Projets" id="Projets">
+              <h1 className="Header">Projets</h1>
+
         <div class="section">
   <div class="card">
     <div class="card-front">
@@ -22,8 +24,7 @@ function Projets() {
         <li>CSS3</li>
         <li>Git</li>
       </ul>
-            <Link className="LinkProjet" to="/">Lien projet</Link>
-                  <p>Date and Duration:</p>
+            <Link className="LinkProjet" to={`https://github.com/lina1197/project-SanteVie/`} target="_blank">Lien projet</Link>
 
 
     </div>
@@ -42,8 +43,7 @@ function Projets() {
         <li>CSS3</li>
         <li>Git</li>
       </ul>
-            <Link className="LinkProjet" to="/">Lien projet</Link>
-                  <p>Date and Duration:</p>
+            <Link className="LinkProjet" to={`https://github.com/lina1197/HomeDeco-Website-Project`} target="_blank">Lien projet</Link>
 
 
         </div>
@@ -66,10 +66,50 @@ function Projets() {
         <li>UX</li>
         <li>UI</li>
       </ul>
-      <Link className="LinkProjet" to="/">Lien projet</Link>
-      <p>Date and Duration:</p>
+      <Link className="LinkProjet" to={`https://github.com/lina1197/ESCAPE_TRAVEL/`} target="_blank">Lien projet</Link>
     </div>
   </div>
+<div class="card">
+    <div class="card-front">
+      <h3>Application web de streaming</h3>
+      <p>développement de l'application Web  de streaming de films cineStream pour le studio de cinéma.</p>
+    </div>
+    <div class="card-back">
+         <p>Technologies used:</p>
+      <ul className="ListTech">
+        <li>HTML5</li>
+        <li>Reactjs</li>
+        <li>Bootstrap</li>
+        <li>JavaScript</li>
+        <li>CSS3</li>
+        <li>Git</li>
+      </ul>
+            <Link className="LinkProjet" to={`https://github.com/lina1197/cine-stream/`} target="_blank">Lien projet</Link>
+
+
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-front">
+      <h3>Application web pour la bibliothèque BiblioTech</h3>
+      <p>développement d'une application web qui permettra à ses utilisateurs de rechercher des livres, de consulter les disponibilités et de gérer leurs emprunts. </p>
+    </div>
+    <div class="card-back">
+         <p>Technologies used:</p>
+      <ul className="ListTech">
+        <li>MongoDB</li>
+        <li>Nodejs</li>
+        <li>JavaScript</li>
+        <li>Express</li>
+        <li>Git</li>
+      </ul>
+            <Link className="LinkProjet" to={`https://github.com/lina1197/Application-web-BiblioTech/`} target="_blank">Lien projet</Link>
+
+
+    </div>
+  </div>
+  
+
 </div>
         
     </div>

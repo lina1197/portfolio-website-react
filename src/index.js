@@ -6,6 +6,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Accueil } from './components';
+import {NotFound} from './components';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
     <Router>
     <Routes>
       <Route path="/" element={<Accueil/>} />
+      <Route path='*' element={<NotFound />}/>
      
             
 

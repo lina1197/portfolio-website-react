@@ -50,6 +50,10 @@
     justify-content: center;
     align-items: center;
 }
+.dark .white-icon {
+    background-color:white;
+    color:black;
+}
 .white-icon::before{display: flex;
 justify-content: center;}
 .white-icon:hover {
@@ -76,11 +80,13 @@ color:white;
 }
 .light a:hover{color: darkblue}
 /* Projets section css */
-
+.Projets{
+    min-height: 100vh;
+    max-height: fit-content;
+}
 
 .section {
     display: flex;
-    height: 100vh;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -94,6 +100,7 @@ color:white;
     position: relative;
     border-radius: 7px;
     perspective: 2000px;
+    
 }
 
 .card:hover .card-front {
@@ -114,6 +121,7 @@ color:white;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding:10px;
     flex-direction: column;
     position: absolute;
     width: 100%;
@@ -128,12 +136,12 @@ color:white;
 
 .light .card-front {
     background-color: #0A192F;
-    color: rgb(100, 255, 218);
+    color: white
 }
 
 .light .card-back {
     background-color: #0A192F;
-    color: rgb(100, 255, 218);
+    color: white;
     transform: rotateY(180deg);
 }
 
@@ -196,10 +204,11 @@ color:white;
 }
 /* section competences */
 .Competences {
-    height:100vh;
+    min-height:100vh;
     display:flex;
     justify-content: center;
     align-items: center;
+    max-height: fit-content;
 }
 .skills-section{
 padding-top: 20px;
@@ -208,6 +217,7 @@ padding-top: 20px;
 .skills-header{
 text-align: center;
 color: inherit;
+margin-top: 20px;
 padding: 1rem;
 position: relative;
 }
@@ -408,29 +418,14 @@ margin-top: 0.5rem;
         0 9px 10px rgba(0, 0, 0, .15),
         0 30px 10px rgba(0, 0, 0, .18),
         0 15px 10px rgba(0, 0, 0, .21);}
-/* .AProposIMG {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-}
 
-.AProposIMG img {
-    width: 10%;
-    margin: 0 auto;
-
-} */
 .AProposIMG {
     display: inline-block;
         position: relative;
        background-color: white;
         width: 150px;
         height: 150px;
-        /* left:50%; */
         border-style:none;
-            /* transform: translateX(-50%); */
         border-radius: 50%;
         overflow: hidden;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -442,13 +437,7 @@ margin-top: 0.5rem;
         max-height: 100%;
         margin: auto;
 }
-.flex {
-    display:flex;
-    justify-content: space-between;
-    width:50%;
-    margin:auto;
 
-}
 .AProposSection p{
     margin: auto;
     width: 60%;
@@ -478,8 +467,27 @@ justify-content:center;}
         
 }
 .APropos {
-    height:100vh;
+    min-height:100vh;
+    max-height:fit-content;
     display:flex;
     justify-content: center;
     align-items: center;
+}
+.buttons {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:250px;
+    margin:auto;
+}
+.Btn {
+    display: flex;
+        align-items: center;
+        justify-content: center;
+    background-color:rgb(100, 255, 218);
+    border:none;
+    width:fit-content;
+    height:fit-content;
+    border-radius: 20px;
+    padding:10px 5px;
 }
